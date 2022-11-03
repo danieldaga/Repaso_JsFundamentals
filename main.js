@@ -152,12 +152,11 @@ const arrayBidi = [[1, 2], [3, 4, 5, 6], [7, 8, 9], [0]]
 const printElements = (arr) => {
         arr.forEach(subArr => {
             subArr.forEach(element => {
-                console.log(element);
-            });
-        });
+                console.log(element)
+            })
+        })
     }
-
-console.log(printElements(arrayBidi));
+printElements(arrayBidi)
 
 //exercise 9
 
@@ -200,14 +199,17 @@ function priceDrinks(arr) {
     }
     return
 }
-console.log(priceDrinks(drinks));
+priceDrinks(drinks)
 
-//exercise 10
+//exercise 10 ?????
 
 const arrObj = [ ["name", "Pedro"], ["job", "Megateacher"], ["age", 35], ["city", "Melilla"], ["isMarried", false] ]
 
 function objTrans(arr) {
-    
+    arr.forEach(subArr => {
+        let person = {arr: subArr,}
+    })
+    return
 }
-
+console.log(objTrans(arrObj))
 
