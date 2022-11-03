@@ -202,3 +202,12 @@ function priceDrinks(arr) {
 }
 console.log(priceDrinks(drinks));
 
+//exercise 10
+
+const arrObj = [ ["name", "Pedro"], ["job", "Megateacher"], ["age", 35], ["city", "Melilla"], ["isMarried", false] ]
+
+function objTrans(arr) {
+    
+}
+
+
