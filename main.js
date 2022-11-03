@@ -1,5 +1,4 @@
 //exercise 1
-console.log("Exercise1");
 let arrNum = [1, 2, 3, 4, 5, 6];
 function sum(arr) {
     let cont = 0;
@@ -15,7 +14,6 @@ console.log(sum(arrNum));
 
 //exercise 2
 
-console.log("Exercise2");
 
 let arrOne = ["one", "two", "three", "four"];
 
@@ -28,7 +26,6 @@ console.log(printArray(arrOne));
 
 //exercise 3 
 
-console.log("Exercise3");
 
 let arr1 = [1, 0, 2, 3, 4];
 let arr2 = [3, 5, 6, 7, 8, 13];
@@ -66,7 +63,6 @@ function sumArr(firstArr, secondArr) {
 console.log(sumArr(arr1, arr2));
 
 //exercise 4 ??????
-console.log("Exercise4");
 
 const array = [
     "apple",
@@ -85,7 +81,6 @@ function element(arr, num) {
 console.log(element(array, 2));
 
 //exercise 5
-console.log("Exercise5");
 
 let arrUnionOne = [1, 2, 3];
 let arrUnionTwo = [100, 2, 1, 10];
@@ -106,7 +101,6 @@ arraysUnion(arrUnionOne, arrUnionTwo);
 console.log(arr3);
 
 //exercise 6
-console.log("exercise 6");
 
 let Object = {
     name: "Daniel",
@@ -125,14 +119,29 @@ function deleteKey(person, key) {
 console.log(deleteKey(Object, 'name'));
 console.log(Object);
 
-//exercise 7 
-console.log('exercise 7')
+//exercise 7  ???
 
 let arrOneD = [1, 2, 3]
 let arrTwoD = [100, 2, 1, 10]
+let arrResult =[]
 
-arrDiferent = (arr1, arr2) => {
-	arr1.filter(e => arr2.indexOf(e) === 1);
+function arrDiferent(arr1, arr2) {
+    for (let i = 0; i < arr2.length; i++) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr2.indexOf(arr1[i]) === -1) {
+            arrResult.push(arr1[i]);
+            }
+        }
+        for (let i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) === -1) {
+            arrResult.push(arr2[i]);
+            }
+        }
+        return arrResult;
+    }
 }
+
 console.log(arrDiferent(arrOneD, arrTwoD));
+
+//exercise 8
 
