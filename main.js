@@ -195,5 +195,10 @@ const drinks = [
 ]
 
 function priceDrinks(arr) {
-
+    for (let i = 0; i < arr.length; i++) {
+        console.log(`La bebida ${arr[i].name} tiene un precio de ${arr[i].price} y los siguientes ingredientes: ${arr[i].ingredients}`)
+    }
+    return
 }
+console.log(priceDrinks(drinks));
+
