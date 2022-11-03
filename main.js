@@ -112,7 +112,7 @@ function deleteKey(person, key) {
     if (person[key]) {
         delete person.key //revisar no funciona sin llamarle directamente a arriba
         return true
-    }else {
+    } else {
         return false
     }
 }
@@ -123,18 +123,18 @@ console.log(Object);
 
 let arrOneD = [1, 2, 3]
 let arrTwoD = [100, 2, 1, 10]
-let arrResult =[]
+let arrResult = []
 
 function arrDiferent(arr1, arr2) {
     for (let i = 0; i < arr2.length; i++) {
         for (let i = 0; i < arr1.length; i++) {
             if (arr2.indexOf(arr1[i]) === -1) {
-            arrResult.push(arr1[i]);
+                arrResult.push(arr1[i]);
             }
         }
         for (let i = 0; i < arr2.length; i++) {
             if (arr1.indexOf(arr2[i]) === -1) {
-            arrResult.push(arr2[i]);
+                arrResult.push(arr2[i]);
             }
         }
         return arrResult;
@@ -145,3 +145,55 @@ console.log(arrDiferent(arrOneD, arrTwoD));
 
 //exercise 8
 
+const arrayBidi = [[1, 2], [3, 4, 5, 6], [7, 8, 9], [0]]
+// function printElements(arr) {
+        // return arr.toString()
+// }
+const printElements = (arr) => {
+        arr.forEach(subArr => {
+            subArr.forEach(element => {
+                console.log(element);
+            });
+        });
+    }
+
+console.log(printElements(arrayBidi));
+
+//exercise 9
+
+const drinks = [
+    {
+        name: "Cerveza",
+        price: "3.50",
+        ingredients: ["cebada", "lúpulo"],
+    },
+    {
+        name: "Coca Cola",
+        price: "3.00",
+        ingredients: ["desconocido"],
+    },
+    {
+        name: "Vino",
+        price: "5.50",
+        ingredients: ["uvas", "taninos"],
+    },
+    {
+        name: "Vodka",
+        price: "7.00",
+        ingredients: ["patata", "agua", "etanol"],
+    },
+    {
+        name: "Whiskey",
+        price: "7.00",
+        ingredients: ["trigo", "agua", "etanol"],
+    },
+    {
+        name: "Zumo de naranja sin azúcar",
+        price: "4.75",
+        ingredients: ["naranjas", "aspartamo", "maltitol", "xilitol"],
+    }
+]
+
+function priceDrinks(arr) {
+
+}
