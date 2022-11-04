@@ -62,7 +62,7 @@ function sumArr(firstArr, secondArr) {
 
 console.log(sumArr(arr1, arr2));
 
-//exercise 4 ??????
+//exercise 4
 
 const array = [
     "apple",
@@ -209,8 +209,10 @@ priceDrinks(drinks)
 const arrObj = [ ["name", "Pedro"], ["job", "Megateacher"], ["age", 35], ["city", "Melilla"], ["isMarried", false] ]
 
 function objTrans(arr) {
+    let Object = {}
     arr.forEach(subArr => {
-        let person = {arr: subArr,}
+        
+        Object.subArr[0] : subArr[1]
     })
     return
 }
