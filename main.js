@@ -72,13 +72,16 @@ const array = [
     "watermelon",
     "grape",
     "peach",
-];
-let num = "";
-function element(arr, num) {
-    for (let i = 0; i < arr.length; i++) { }
-    return;
+]
+const getEachElement = (arr, num) => {
+    arr.forEach(e => {
+        if ((arr.indexOf(e)+1) % num === 0) {
+            console.log(e);
+        }
+    })
 }
-console.log(element(array, 2));
+getEachElement(array, 2)
+
 
 //exercise 5
 
