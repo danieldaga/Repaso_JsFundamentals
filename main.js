@@ -327,4 +327,10 @@ console.log(isString('asdasd'))
 
 //exercise 17
 
+// function repeat(str, n) {
+//     return str.repeat(n)
+// }
+const repeat = (str, n) => (str.repeat(n))
+console.log(repeat('Ha!', 4));
+
 
