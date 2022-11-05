@@ -241,3 +241,4 @@ strFilter(arrayFilter)
 console.log(arrRes);
 
 //exercise 12
+
