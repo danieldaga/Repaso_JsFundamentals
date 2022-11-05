@@ -16,12 +16,16 @@ console.log(oddSum(arrNum));
 
 let arrOne = ["one", "two", "three", "four"];
 
-function printArray(arr) {
-    for (let i = 3; i < arr.length; i--) {
-        return arr.slice(0, 4).reverse();
-    }
-}
-console.log(printArray(arrOne));
+// function printArray(arr) {
+//     for (let i = arr.length-1; i >= 0; i--) {
+//         console.log(arr[i])
+//     }
+//     return
+// }
+
+const printArray  = (arr) => arr.slice(0, arr.length).reverse() //arrowfunction 
+
+console.log(printArray(arrOne))
 
 //exercise 3 
 
