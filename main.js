@@ -209,15 +209,35 @@ priceDrinks(drinks)
 
 //exercise 10 ?????
 
-const arrObj = [ ["name", "Pedro"], ["job", "Megateacher"], ["age", 35], ["city", "Melilla"], ["isMarried", false] ]
+// const arrObj = [ ["name", "Pedro"], ["job", "Megateacher"], ["age", 35], ["city", "Melilla"], ["isMarried", false] ]
 
 // function objTrans(arr) {
 //     let Object = {}
-//     arr.forEach(subArr => {
-        
-//         Object.subArr[0] : subArr[1]
-//     })
-//     return
+//     for (let i = 0; i < arr.length; i++) {
+//         Object = {
+            
+//         }  
+//         Object.value =
+//     }
+//     return console.log(Object)
 // }
-// console.log(objTrans(arrObj))
+// objTrans(arrObj)
 
+
+
+//exercise 11
+
+const arrayFilter = ["casa", "reloj", "carótida", "coco", "elemento", "GammaTech", "dado"]
+let arrRes =[]
+function strFilter(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length < 6) {
+            arrRes.push(arr[i]) 
+        }
+    }
+    return
+}
+strFilter(arrayFilter)
+console.log(arrRes);
+
+//exercise 12
