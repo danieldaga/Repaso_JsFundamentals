@@ -1,16 +1,15 @@
 //exercise 1
 let arrNum = [1, 2, 3, 4, 5, 6];
-function sum(arr) {
+function oddSum(arr) {
     let cont = 0;
     for (let i = 0; i < arr.length - 1; i++) {
-        if (i % 2 !== 0) {
-            console.log(arr[i]);
+        if (arr[i] % 2 === 1) {
+            cont += arr[i]
         }
-        cont++;
     }
     return cont;
 }
-console.log(sum(arrNum));
+console.log(oddSum(arrNum));
 
 //exercise 2
 
@@ -208,13 +207,13 @@ priceDrinks(drinks)
 
 const arrObj = [ ["name", "Pedro"], ["job", "Megateacher"], ["age", 35], ["city", "Melilla"], ["isMarried", false] ]
 
-function objTrans(arr) {
-    let Object = {}
-    arr.forEach(subArr => {
+// function objTrans(arr) {
+//     let Object = {}
+//     arr.forEach(subArr => {
         
-        Object.subArr[0] : subArr[1]
-    })
-    return
-}
-console.log(objTrans(arrObj))
+//         Object.subArr[0] : subArr[1]
+//     })
+//     return
+// }
+// console.log(objTrans(arrObj))
 
