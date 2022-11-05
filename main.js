@@ -284,3 +284,13 @@ console.log(megaTeacher)
 
 //exercise 14
 
+function substract(num, substractorNum) {
+    if (num > 0) {
+      return  num -= substractorNum
+    }
+    
+}
+console.log(substract(4,8));
+
+//exercise 15
+
