@@ -294,3 +294,37 @@ console.log(substract(4,8));
 
 //exercise 15
 
+let library = [ 
+    {
+        author: 'Bill Gates',
+        title: 'The Road Ahead',
+        readingStatus: true
+    },
+    {
+        author: 'Steve Jobs',
+        title: 'Walter Isaacson',
+        readingStatus: true
+    },
+    {
+        author: 'Suzanne Collins',
+        title:  'Mockingjay: The Final Book of The Hunger Games', 
+        readingStatus: false
+    }];
+
+function readingStatus(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(`El libro ${arr[i].title} escrito por: ${arr[i].author} estado de lectura : ${arr[i].readingStatus}`);
+    }
+    return 
+}
+readingStatus(library)
+
+//exercise 16
+
+const isString = (input) => (typeof input)
+
+console.log(isString('asdasd'))
+
+//exercise 17
+
+
