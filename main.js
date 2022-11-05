@@ -23,7 +23,7 @@ let arrOne = ["one", "two", "three", "four"];
 //     return
 // }
 
-const printArray  = (arr) => arr.slice(0, arr.length).reverse() //arrowfunction 
+const printArray = (arr) => arr.slice(0, arr.length).reverse() //arrowfunction 
 
 console.log(printArray(arrOne))
 
@@ -78,7 +78,7 @@ const array = [
 ]
 const getEachElement = (arr, num) => {
     arr.forEach(e => {
-        if ((arr.indexOf(e)+1) % num === 0) {
+        if ((arr.indexOf(e) + 1) % num === 0) {
             console.log(e);
         }
     })
@@ -153,15 +153,15 @@ console.log(arrDiferent(arrOneD, arrTwoD));
 
 const arrayBidi = [[1, 2], [3, 4, 5, 6], [7, 8, 9], [0]]
 // function printElements(arr) {
-        // return arr.toString()
+// return arr.toString()
 // }
 const printElements = (arr) => {
-        arr.forEach(subArr => {
-            subArr.forEach(element => {
-                console.log(element)
-            })
+    arr.forEach(subArr => {
+        subArr.forEach(element => {
+            console.log(element)
         })
-    }
+    })
+}
 printElements(arrayBidi)
 
 //exercise 9
@@ -215,7 +215,7 @@ priceDrinks(drinks)
 //     let Object = {}
 //     for (let i = 0; i < arr.length; i++) {
 //         Object = {
-            
+
 //         }  
 //         Object.value =
 //     }
@@ -228,11 +228,11 @@ priceDrinks(drinks)
 //exercise 11
 
 const arrayFilter = ["casa", "reloj", "carótida", "coco", "elemento", "GammaTech", "dado"]
-let arrRes =[]
+let arrRes = []
 function strFilter(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].length < 6) {
-            arrRes.push(arr[i]) 
+            arrRes.push(arr[i])
         }
     }
     return
@@ -240,5 +240,47 @@ function strFilter(arr) {
 strFilter(arrayFilter)
 console.log(arrRes);
 
-//exercise 12
+//exercise 12 ?????¿
+
+// const myObj = {
+//     name: "Pedro",
+//     age: 35
+// }
+
+// function objToArr(obj) {
+//     let arrObj = Object.entries(obj);
+//     return arrObj
+// }
+
+// console.log(objToArr(myObj))
+
+//exercise 13 ???
+
+const megaTeacher = {
+    name: "Pablo",
+    lastname: "Quintana",
+    age: 27,
+    vegan: false,
+    address: {
+        street: "Gran Vía",
+        number: 73,
+        floor: 4
+    },
+    hobbies: ["basketball", "coding", "music", "reading"],
+    height: 1.98
+}
+//ex 13.1
+const addHobbie = (obj) => (obj.hobbies.push('keyboard'))
+addHobbie(megaTeacher)
+console.log(megaTeacher)
+//ex13.2
+megaTeacher.introduceMySelf = function introduceMyself(obj) {
+    return console.log((`Hola, me llamo ${obj.name} ${obj.lastname}, tengo ${obj.age} años y vivo en 
+    la calle ${obj.street}, ${obj.number}. Mis hobbies son: ${obj.hobbies} (etc.)`));
+}
+console.log(megaTeacher)
+//ex12.3
+
+
+//exercise 14
 
