@@ -83,7 +83,7 @@ const getEachElement = (arr, num) => {
         }
     })
 }
-getEachElement(array, 2)
+getEachElement(array, 2 )
 
 
 //exercise 5
@@ -333,4 +333,29 @@ console.log(isString('asdasd'))
 const repeat = (str, n) => (str.repeat(n))
 console.log(repeat('Ha!', 4));
 
+//////Bonus track
+//bonus 1
 
+const arrToFlat = [ [1, 2], [3, 4], [5, 6], [7] ]
+const arrPlano = (arr) => (arr.flat())
+console.log(arrPlano(arrToFlat) );
+
+// const arrPlanoReduce = (arr) => (
+// arr.forEach(e => {
+//     arr.reduce(arr[e])
+// })
+// )
+// console.log(arrPlanoReduce(arrToFlat) )
+
+
+//bonus 2
+
+const arrFirt = ['b', 'd', 'e', 'a']
+const arrSecond = ['b', 'c', 'e', 'd']
+const arrThird = ['a', 'b', 'e', 'c']
+let resultArr = []
+function containElements(arrOne, arrTwo, arrThree) {
+    console.log(resultArr = arrOne.concat(arrTwo, arrThree))
+    return
+}
+containElements(arrFirt,arrSecond,arrThird)
